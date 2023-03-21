@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<script>
+    let data = [7,5,9,7,66,4,5,32,3,55];
+    // for (let i=0; i<data.length; i++){
+    //     console.log(data[i]);
+    // }
+    function getElement() {
+       var el = document.getElementById("element").value
+       if(el<data.length && typeof parseInt(el) === "number"){
+           alert(data[el]);
+       }else {
+        alert("Enter valid Number" )
+       }
+    }
+</script>
+<body>
+    <input type="number" id="element" value=""/>
+    <button onclick="getElement()">Get Data</button>
+</body> 
+</html>
